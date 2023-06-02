@@ -1,0 +1,46 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+        { "use": "official",
+
+        "value": "kupi123hjk"
+    }
+        
+    ],
+
+    "name": [
+
+        { "use": "official",
+    
+            "given": ["Justus"],
+            "family": "oluoch"
+    
+    
+    }
+
+    ],
+
+    "address": [
+        {
+
+            "city": "Nairobi",
+            "use": "home",
+            "type": "physical"
+        
+             }
+            ] , 
+
+    "gender": "male",
+    "birthDate": "2000-01-01",
+    "maritalStatus": {"coding": [
+        {
+            "system": "http://snomed.info/sct",
+            "code": "260385009",
+            "display": "No"
+        }
+    ],
+    "text": "Not married"}
+
+
+
+}

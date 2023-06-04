@@ -29,6 +29,10 @@
         
              }
             ] , 
+    
+    "active": true,
+
+    "deceasedBoolean": false,
 
     "gender": "male",
     "birthDate": "2000-01-01",

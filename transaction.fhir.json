@@ -1,0 +1,65 @@
+{
+
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        
+        {
+            "fullUrl": "urn:uuid:Patient",
+            "resource":{
+             "resourceType": "Patient",
+             "name": [
+ 
+                 {"use": "official",
+                 
+                 "given": ["Justus"],
+                 "family": "oluoch"}
+             ],
+             "address": [
+                 {
+                     "city": "Nairobi",
+                     "use": "home",
+                     "type": "physical"
+ 
+                      }
+             ],
+             "active": true,
+             
+             "deceasedBoolean": false   
+            },
+            "request": {
+ 
+             "method": "POST",
+             "url": "Patient"
+         }
+         
+        },
+            
+        {
+            "resource":{
+                "resourceType": "Observation",
+                "code": {
+
+                    "coding": [{
+
+                    "system": "http://loinc.org",
+                    "code": "testObservation",
+                    "display": "Observation 1"
+                    }]
+                },
+                "subject":{
+                    "type":"Patient",
+                    "reference":"urn:uuid:Patient"
+                },
+                "valueInteger": 5
+
+                },
+                
+                "request":{
+
+                    "method":"POST"
+                }
+
+        }
+    ]       
+}
